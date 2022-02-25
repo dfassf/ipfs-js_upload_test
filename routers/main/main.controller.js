@@ -3,12 +3,13 @@ const main = (req, res) => {
 }
 
 const fileTransfer = async (req, res) => {
-    console.log(req.file)
-    // IPFS = require('ipfs-core')
-    // const node = await IPFS.create()
+    // console.log(req.file)
+    let data = req.file.buffer
+    IPFS = require('ipfs-core')
+    const node = await IPFS.create()
     // const data = 'holy moly guacamole'
-    // const results = await node.add(data)
-    // console.log(results)
+    const results = await node.add(data)
+    console.log(results)
     
 }
 
