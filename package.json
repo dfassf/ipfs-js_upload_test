@@ -9,6 +9,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "js-ipfs": "^0.0.301"
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "js-ipfs": "^0.0.301",
+    "nunjucks": "^3.2.3",
+    "path": "^0.12.7"
   }
 }
