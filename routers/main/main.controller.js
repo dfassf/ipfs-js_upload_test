@@ -3,15 +3,15 @@ const main = (req, res) => {
 }
 
 const fileTransfer = async (req, res) => {
-    console.log('here')
-    // const IPFS = require('js-ipfs')
-    // const node = await IPFS.create()
-    // const data = 'testing, attention please'
-    // const results = node.add(data)
-    // console.log(results, 'resultsㅋㅋ')
-    // for await (const {cid} of results){
-    //     console.log(cid.toString(), 'toStringㅋㅋㅋ')
-    // }
+    // console.log('here')
+    IPFS = require('ipfs-core')
+    const node = await IPFS.create()
+    const data = 'testing, attention please'
+    const results = node.add(data)
+    console.log(results, 'resultsㅋㅋ')
+    for await (const {cid} of results){
+        console.log(cid.toString(), 'toStringㅋㅋㅋ')
+    }
 }
 
 
